@@ -39,5 +39,11 @@ function fromEuroToPound(euros) {
     let pounds = euros * EuroToPound;
     return pounds;
 }
-module.exports = { fromEuroToDollar, fromEuroToYen, fromEuroToPound};
+
+const dollarToYen = 0.82;
+function fromDollarToYen(dollars) {
+    let yens = dollars * dollarToYen;
+    return yens;
+}
+module.exports = { fromEuroToDollar, fromEuroToYen, fromEuroToPound, fromDollarToYen};
 
